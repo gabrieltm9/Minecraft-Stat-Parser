@@ -1,0 +1,20 @@
+﻿<Window x:Class="MinecraftStatParser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinecraftStatParser"
+        mc:Ignorable="d"
+        Title="Minecraft Stat Parser" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="PickFileButton" Content="Pick Stat File(s)" HorizontalAlignment="Left" Margin="251,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,0.603" Click="PickFileButton_Click"/>
+        <ListBox x:Name="PlayersListBox" Margin="28,59,514,29" SelectionChanged="PlayersListBox_SelectionChanged" FontSize="15"/>
+        <Viewbox x:Name="NameViewBox" Margin="474,40,68,328">
+            <TextBlock x:Name="NameTxt" HorizontalAlignment="Left" Text="Name" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Visibility="Visible" FontSize="40" Width="230" TextAlignment="Center"/>
+        </Viewbox>
+        <Viewbox x:Name="TimePlayedBox" Margin="474,99,68,269">
+            <TextBlock x:Name="TimePlayedTxt" HorizontalAlignment="Left" Text="Time Played" TextWrapping="NoWrap" VerticalAlignment="Center" Visibility="Visible" FontSize="20" Width="240" TextAlignment="Center"/>
+        </Viewbox>
+        <Image x:Name="SkinImage" HorizontalAlignment="Left" Height="236" Margin="333,103,0,0" VerticalAlignment="Top" Width="178"/>
+    </Grid>
+</Window>
